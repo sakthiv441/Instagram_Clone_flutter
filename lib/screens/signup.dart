@@ -1,9 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:instagram_clone/UitlsFolder/colors.dart';
@@ -67,7 +65,7 @@ class _SignupscreenState extends State<Signupscreen> {
         MaterialPageRoute(
           builder: (_) => const ResponsiveLayout(
             mobilescreenLayout: MobilscreenLayout(),
-            webscreenLayout: webscreenLayout(),
+            webscreenLayout: WebscreenLayout(),
           ),
         ),
       );
@@ -97,8 +95,8 @@ class _SignupscreenState extends State<Signupscreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Flexible(
-                        child: Container(),
                         flex: 1,
+                        child: Container(),
                       ),
                       //logo
                       SvgPicture.asset(

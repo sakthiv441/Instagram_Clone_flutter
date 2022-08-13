@@ -50,6 +50,7 @@ class _MobilscreenLayoutState extends State<MobilscreenLayout> {
         children: homescreenItems,
       ),
       bottomNavigationBar: CupertinoTabBar(
+        height: 60.0,
         backgroundColor: mobileBackgroundColor,
         items: [
           BottomNavigationBarItem(

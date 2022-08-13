@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:instagram_clone/UitlsFolder/colors.dart';
 import 'package:instagram_clone/UitlsFolder/utils.dart';
@@ -44,7 +42,7 @@ class _LoginscreenState extends State<Loginscreen> {
         MaterialPageRoute(
           builder: (_) => const ResponsiveLayout(
             mobilescreenLayout: MobilscreenLayout(),
-            webscreenLayout: webscreenLayout(),
+            webscreenLayout: WebscreenLayout(),
           ),
         ),
       );
@@ -73,8 +71,8 @@ class _LoginscreenState extends State<Loginscreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Flexible(
-                  child: Container(),
                   flex: 2,
+                  child: Container(),
                 ),
                 //logo
                 SvgPicture.asset(

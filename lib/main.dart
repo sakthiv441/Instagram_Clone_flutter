@@ -8,7 +8,7 @@ import 'package:instagram_clone/responsive/mobile_screen_layout.dart';
 import 'package:instagram_clone/responsive/responsive.dart';
 import 'package:instagram_clone/responsive/web_screen_layout.dart';
 import 'package:instagram_clone/screens/login_screen.dart';
-import 'package:instagram_clone/screens/signup.dart';
+
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
               if (snapshot.hasData) {
                 return const ResponsiveLayout(
                   mobilescreenLayout: MobilscreenLayout(),
-                  webscreenLayout: webscreenLayout(),
+                  webscreenLayout: WebscreenLayout(),
                 );
               }
             } else if (snapshot.hasError) {
